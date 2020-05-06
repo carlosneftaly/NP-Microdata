@@ -8,6 +8,7 @@ output:
    # css: ["css/rutgers.css", #"css/custom.css"]
     css: ["default","css/rutgers.css", "css/rutgers-fonts.css"]
     lib_dir: libs
+   # yolo: TRUE
     nature:
       highlightStyle: github
       highlightLines: true
@@ -128,7 +129,7 @@ Podemos instalar **R** desde el siguiente link: https://www.r-project.org/
 
 ---
 
-```{r, echo=FALSE,fig.align='center', out.width = "900px"}
+```{r, echo=FALSE,fig.align='center', out.width = "1000px"}
       knitr::include_graphics('./img/Rstu_env.png')
 ```
 

@@ -1,0 +1,104 @@
+---
+title: " . "
+subtitle: "  "
+author: '  '
+output:
+  xaringan::moon_reader:
+    #css: [ "css/my-theme.css", "css/rutgers.css"]
+   # css: ["css/rutgers.css", #"css/custom.css"]
+    css: ["default","css/rutgers.css", "css/rutgers-fonts.css"]
+    lib_dir: libs
+   # yolo: TRUE
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:9"
+      beforeInit: "https://platform.twitter.com/widgets.js"
+    includes:
+      in_header: header.html  
+   
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+## 
+
+<h2> `r emo::ji("dart")` En este videtutorial aprenderemos a: </h2>
+
+  + Configurar un flujo de trabajo para el análisis de datos en Rstudio
+  
+  + Primeros pasos
+  
+  + Importando datos a Rstudio
+  
+  + Sistema de ayudas en R 
+
+
+
+---
+
+## Interfaz  de Rstudio
+
+```{r, echo=FALSE,fig.align='center', out.width = "900px"}
+      knitr::include_graphics('./img/Rstu_env.png')
+```
+
+---
+
+## Flujo de trabajo propuesto para el Módulo
+
+
+
+```{r, echo=FALSE,fig.align='center',fig.retina=2, out.width = "800px"}
+      knitr::include_graphics('./img/flujo.png')
+```
+
+
+---
+
+## Flujo de trabajo: Preparación de datos en Excel  
+
+
+
+```{r, echo=FALSE,fig.align='center',fig.retina=2, out.width = "900px"}
+      knitr::include_graphics('./img/0datos.png')
+```
+
+
+
+---
+## Flujo de trabajo: Creando proyectos en Rstudio
+
+```{r, echo=FALSE,fig.align='center',fig.retina=2, out.width = "900px"}
+      knitr::include_graphics('./img/1Rstudio.png')
+```
+
+--- 
+
+## Flujo de trabajo 
+
+###   Recordando `r emo::ji("thinking")`:  Tipo de datos 
+
+```{r, echo=FALSE,fig.align='center',fig.retina=2, out.width = "900px"}
+      knitr::include_graphics('./img/Tipodatos.png')
+```
+
+--- 
+
+
+## Primeros pasos en R: Importando datos
+
+.pull-left[
+```{r, echo=FALSE,fig.align='left',fig.retina=2, out.width = "700px"}
+      knitr::include_graphics('./img/Importando.png')
+```
+
+]
+
+.pull-right[
+
+]
