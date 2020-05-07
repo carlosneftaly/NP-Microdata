@@ -57,34 +57,153 @@ class: center, middle, inverse, title-slide
 
 &lt;img src="./img/0datos.png" width="900px" style="display: block; margin: auto;" /&gt;
 
+---
 
+
+## Haz un rectángulo .... y evita esto 🤦‍♀
+
+![](img/dataOrganiz2.png)
 
 ---
-## Flujo de trabajo: Creando proyectos en Rstudio
 
-&lt;img src="./img/1Rstudio.png" width="900px" style="display: block; margin: auto;" /&gt;
+## No celdas vacías ⚠️
 
---- 
+![](img/dataOrganiz3.png )
 
-## Flujo de trabajo 
+---
 
-###   Recordando 🤔:  Tipo de datos 
+##  Se consitente 🍰 ... 
 
-&lt;img src="./img/Tipodatos.png" width="900px" style="display: block; margin: auto;" /&gt;
-
---- 
-
-
-## Primeros pasos en R: Importando datos
 
 .pull-left[
-&lt;img src="./img/Importando.png" width="700px" style="display: block; margin: auto auto auto 0;" /&gt;
+
++ Codifica correctamente las variables categóricas
+ 
++ Usa nombre de _variables_ apropiados
+ 
++ Codifica adecuadamente los datos perdidos: _NA_ o dejar vacío
+
++ Evitar cálculos y fórmulas 
+
++ Evitar comentarios y unidades en las celdas
 
 ]
 
 .pull-right[
 
+| Buen nombre  👏| Alternativa  🙄 | Evitar 💔              |
+|--------------------|-------------|---------------------|
+| Max_Temp_C         | MaxTempC    | Maximum Temp (◦C)   |
+| Cell_Type          | CellType    | Cell Type           |
+| Precipicitacion_mm | Precmm      | Precipitacion mm    |
+| Growth_rate        | GrowthRate  | Tasa de crecimiento |
+
 ]
+
+
+---
+
+## Flujo de trabajo: Creando proyectos en Rstudio
+
+&lt;img src="./img/1Rstudio.png" width="900px" style="display: block; margin: auto;" /&gt;
+
+---
+
+
+##   Recordando :  Tipo de datos 
+
+&lt;img src="./img/Tipodatos.png" width="700px" style="display: block; margin: auto;" /&gt;
+
+
+
+---
+
+## Primeros pasos en R: Importando datos
+
+.pull-left[
+
+&lt;img src="./img/Importando.png" width="700px" style="display: block; margin: auto auto auto 0;" /&gt;
+]
+
+.pull-right[
+
+
+```r
+*datos1 &lt;-
+  read.csv('../Datos/Datos-Actividad1.2.csv', 
+           header = T, 
+           sep = ';') 
+```
+
++ Creamos un __objeto 'vacío'__ el cual contedrá los datos. 
+
+]
+
+---
+
+## Primeros pasos en R: Importando datos
+
+.pull-left[
+
+&lt;img src="./img/Importando.png" width="700px" style="display: block; margin: auto auto auto 0;" /&gt;
+]
+
+.pull-right[
+
+
+```r
+datos1 &lt;-  
+* read.csv('../Datos/Datos-Actividad1.2.csv',
+           header = T, 
+           sep = ';') 
+```
+
+ + Creamos un __objeto 'vacío'__ el cual contedrá los datos. 
+ + Luego, mediante la función __read.csv()__ asignaremos nuestros datos    externos al __objeto vacío__. 
+ 
+ 
+]
+
+---
+
+## Primeros pasos en R: Importando datos
+
+.pull-left[
+
+&lt;img src="./img/Importando.png" width="700px" style="display: block; margin: auto auto auto 0;" /&gt;
+]
+
+.pull-right[
+
+
+```r
+datos1 &lt;-  
+* read.csv('../Datos/Datos-Actividad1.2.csv',
+*          header = T, sep = ';', dec = ',')
+```
+
+
+
+
+]
+
+---
+
+## Primeros pasos en R: Importando datos
+
+
+   Time   X756_Pectin_R1   X756_Pectin_R2
+-------  ---------------  ---------------
+    0.0           0.1458           0.1515
+  676.7           0.1504           0.1562
+ 1353.5           0.1464           0.1521
+ 2030.2           0.1462           0.1534
+ 2706.9           0.1455           0.1518
+ 3383.6           0.1477           0.1533
+ 4060.4           0.1468           0.1534
+ 4737.1           0.1479           0.1540
+
+---
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
