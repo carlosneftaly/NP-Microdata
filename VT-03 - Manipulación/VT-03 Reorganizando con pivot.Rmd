@@ -1,0 +1,92 @@
+---
+title: " . "
+subtitle: "  "
+author: '  '
+output:
+  xaringan::moon_reader:
+    #css: [ "css/my-theme.css", "css/rutgers.css"]
+   # css: ["css/rutgers.css", #"css/custom.css"]
+    css: ["default","css/rutgers.css", "css/rutgers-fonts.css"]
+    lib_dir: libs
+   # yolo: TRUE
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:9"
+      beforeInit: "https://platform.twitter.com/widgets.js"
+    includes:
+      in_header: header.html  
+   
+---
+
+## 
+
+ <h2> `r emo::ji("dart")` En este videtutorial aprenderemos a: </h2>
+ 
+ + Transformación de datos a _tidy way_
+ 
+ + Manipulando datos con _dplyr_
+ 
+---
+
+class: inverse, center, middle
+
+# 1. Transformación de datos en R 
+
+---
+
+class: inverse, center, middle
+
+# 1. Transformación de datos en R 
+```{r, echo=FALSE,fig.align='center',fig.retina=2, out.width = "700px"}
+   knitr::include_graphics('./img/dest.png')
+``` 
+---
+
+
+class: center, middle
+
+# Transformación de datos en R: Qué necesitamos? 
+  ##   <i class="fa fa-table" aria-hidden="true"></i> Datos: _archivo.csv_ 
+ 
+ ##   <i class="fa fa-cube" aria-hidden="true"></i> Paquetes: _tidyverse::tidyr_
+ 
+ ### <i class="fa fa-cube" aria-hidden="true"></i> Funciones: `pivot_longer()`
+
+---
+
+
+# Transformación de datos en R: Qué necesitamos?
+
+<h2> <i class="fa fa-table" aria-hidden="true"></i> Datos
+</h2>
+
+```{r, echo=FALSE,fig.align='center',fig.retina=2, out.width = "900px"}
+      knitr::include_graphics('./img/Carlos Class.jpeg')
+```
+
+---
+
+# Transformación de datos en R: Objetivo
+
+<h2> <i class="fa fa-table" aria-hidden="true"></i> Datos
+</h2>
+
+```{r, echo=FALSE,fig.align='center',fig.retina=2, out.width = "900px"}
+      knitr::include_graphics('./img/pivot2.png')
+```
+
+---
+
+# Transformación de datos en R: `pivot_longer()` 
+
+```{r, echo=FALSE,fig.align='center',fig.retina=2, out.width = "700px"}
+      knitr::include_graphics('./img/pivot.png')
+```
+
+---
+
+
+
+
