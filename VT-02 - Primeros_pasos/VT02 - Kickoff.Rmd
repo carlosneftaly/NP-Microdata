@@ -31,23 +31,18 @@ knitr::opts_chunk$set(echo = FALSE)
 
   + Configurar un flujo de trabajo para el análisis de datos en Rstudio
   
-  + Primeros pasos
+  + Primeros pasos en Rstudio: 
   
-  + Importando datos a Rstudio
-  
+      - Entendiendo Rstudio
+      
+      - Importando datos a Rstudio
+      
   + Sistema de ayudas en R 
 
 
 
 ---
 
-## Interfaz  de Rstudio
-
-```{r, echo=FALSE,fig.align='center', out.width = "900px"}
-      knitr::include_graphics('./img/Rstu_env.png')
-```
-
----
 
 ## Flujo de trabajo propuesto para el Módulo
 
@@ -71,48 +66,6 @@ knitr::opts_chunk$set(echo = FALSE)
 ---
 
 
-## Haz un rectángulo .... y evita esto `r emo::ji("woman_facepalming")`
-
-![](img/dataOrganiz2.png)
-
----
-
-## No celdas vacías `r emo::ji("warning")`
-
-![](img/dataOrganiz3.png )
-
----
-
-##  Se consitente `r emo::ji("cake")` ... 
-
-
-.pull-left[
-
-+ Codifica correctamente las variables categóricas
- 
-+ Usa nombre de _variables_ apropiados
- 
-+ Codifica adecuadamente los datos perdidos: _NA_ o dejar vacío
-
-+ Evitar cálculos y fórmulas 
-
-+ Evitar comentarios y unidades en las celdas
-
-]
-
-.pull-right[
-
-| Buen nombre  `r emo::ji("clap")`| Alternativa  `r emo::ji("roll_eyes")` | Evitar `r emo::ji("broken_heart")`              |
-|--------------------|-------------|---------------------|
-| Max_Temp_C         | MaxTempC    | Maximum Temp (◦C)   |
-| Cell_Type          | CellType    | Cell Type           |
-| Precipicitacion_mm | Precmm      | Precipitacion mm    |
-| Growth_rate        | GrowthRate  | Tasa de crecimiento |
-
-]
-
-
----
 
 ## Flujo de trabajo: Creando proyectos en Rstudio
 
@@ -122,16 +75,6 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ---
 
-
-##   Recordando :  Tipo de datos 
-
-```{r, echo=FALSE,fig.align='center',fig.retina=2, out.width = "700px"}
-      knitr::include_graphics('./img/Tipodatos.png')
-```
-
-
-
----
 
 ## Primeros pasos en R: Importando datos
 
@@ -210,13 +153,30 @@ datos1 <-
 
 ---
 
-## Primeros pasos en R: Importando datos
+## Pidiendo ayuda en R 
 
-```{r echo=FALSE, results = 'asis'}
-library(knitr)
+.pull-left[
 
-kable(datos1[1:8, 1:3])
+![](https://media.giphy.com/media/1FMaabePDEfgk/giphy.gif)
 
-```
+]
 
----
+.pull-right[
+
++ Funciones o comandos 
+
+  - help(FUN)
+  
+  - ?FUN
++ Temas 
+  
+  - help.search(tema)
+  
+  - ??tema 
++ Fuentes externas 
+  - Stack Overflow: https://stackoverflow.com/questions/tagged/r
+  - Rseek: https://rseek.org/
+  
++ Bonus: Google es tu amigo!
+
+]
