@@ -134,3 +134,11 @@ Podemos instalar **R** desde el siguiente link: https://www.r-project.org/
 ```
 
 ---
+
+## Sistema de ayudas
+
++ Sistema nativo de ayudas de R 
++ Stackoverflow 
++ rseek.org
+
+---
