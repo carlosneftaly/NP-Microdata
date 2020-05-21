@@ -26,21 +26,18 @@ class: center, middle, inverse, title-slide
 
   + Configurar un flujo de trabajo para el análisis de datos en Rstudio
   
-  + Primeros pasos
+  + Primeros pasos en Rstudio: 
   
-  + Importando datos a Rstudio
-  
+      - Entendiendo Rstudio
+      
+      - Importando datos a Rstudio
+      
   + Sistema de ayudas en R 
 
 
 
 ---
 
-## Interfaz  de Rstudio
-
-&lt;img src="./img/Rstu_env.png" width="900px" style="display: block; margin: auto;" /&gt;
-
----
 
 ## Flujo de trabajo propuesto para el Módulo
 
@@ -60,48 +57,6 @@ class: center, middle, inverse, title-slide
 ---
 
 
-## Haz un rectángulo .... y evita esto 🤦‍♀
-
-![](img/dataOrganiz2.png)
-
----
-
-## No celdas vacías ⚠️
-
-![](img/dataOrganiz3.png )
-
----
-
-##  Se consitente 🍰 ... 
-
-
-.pull-left[
-
-+ Codifica correctamente las variables categóricas
- 
-+ Usa nombre de _variables_ apropiados
- 
-+ Codifica adecuadamente los datos perdidos: _NA_ o dejar vacío
-
-+ Evitar cálculos y fórmulas 
-
-+ Evitar comentarios y unidades en las celdas
-
-]
-
-.pull-right[
-
-| Buen nombre  👏| Alternativa  🙄 | Evitar 💔              |
-|--------------------|-------------|---------------------|
-| Max_Temp_C         | MaxTempC    | Maximum Temp (◦C)   |
-| Cell_Type          | CellType    | Cell Type           |
-| Precipicitacion_mm | Precmm      | Precipitacion mm    |
-| Growth_rate        | GrowthRate  | Tasa de crecimiento |
-
-]
-
-
----
 
 ## Flujo de trabajo: Creando proyectos en Rstudio
 
@@ -109,14 +64,6 @@ class: center, middle, inverse, title-slide
 
 ---
 
-
-##   Recordando :  Tipo de datos 
-
-&lt;img src="./img/Tipodatos.png" width="700px" style="display: block; margin: auto;" /&gt;
-
-
-
----
 
 ## Primeros pasos en R: Importando datos
 
@@ -189,21 +136,33 @@ datos1 &lt;-
 
 ---
 
-## Primeros pasos en R: Importando datos
+## Pidiendo ayuda en R 
 
+.pull-left[
 
-   Time   X756_Pectin_R1   X756_Pectin_R2
--------  ---------------  ---------------
-    0.0           0.1458           0.1515
-  676.7           0.1504           0.1562
- 1353.5           0.1464           0.1521
- 2030.2           0.1462           0.1534
- 2706.9           0.1455           0.1518
- 3383.6           0.1477           0.1533
- 4060.4           0.1468           0.1534
- 4737.1           0.1479           0.1540
+![](https://media.giphy.com/media/1FMaabePDEfgk/giphy.gif)
 
----
+]
+
+.pull-right[
+
++ Funciones o comandos 
+
+  - help(FUN)
+  
+  - ?FUN
++ Temas 
+  
+  - help.search(tema)
+  
+  - ??tema 
++ Fuentes externas 
+  - Stack Overflow: https://stackoverflow.com/questions/tagged/r
+  - Rseek: https://rseek.org/
+  
++ Bonus: Google es tu amigo!
+
+]
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
