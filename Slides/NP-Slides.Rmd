@@ -1,0 +1,67 @@
+---
+title: " . "
+subtitle: "  "
+author: '  '
+output:
+  xaringan::moon_reader:
+    #css: [ "css/my-theme.css", "css/rutgers.css"]
+   # css: ["css/rutgers.css", #"css/custom.css"]
+    css: ["default","css/rutgers.css", "css/rutgers-fonts.css"]
+    lib_dir: libs
+   # yolo: TRUE
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:9"
+      beforeInit: "https://platform.twitter.com/widgets.js"
+    includes:
+      in_header: header.html  
+   
+---
+
+# Tabla de contenido
+.pull-left[
+
++ Introducción a R 
+  + Qué es R? 
+  + Por qué usar R? 
+     + Aqui lo clásico (Libre, gratis, multiplataforma, bigdata)
+     + Relevancia en ciencias biológica (Citaciones, NGS, etc)
++ Estructura del lenguaje
+   + Lógica
+   + Fuerza extra: Paquetes (CRAN, bioconductor, github..)
+   + Ayudas (Esto puede repetirse con el etutorial, pero es importante recalcar)
+   + Curva de aprendizaje:Por qué es difícil de aprender
+     
+     
++ RStudio y Tidyverse: Nueva era de R? 
+  + Por qué usar RStudio ? 
+     + Los cuatro páneles 
+]  
+
+.pull-right[
+
++ Tipos de datos en R 
+   + Tpos de datos 
+   + Estructuras
+      + Vectores 
+      + Factores 
+      + Listas 
+      + Dataframes
+
++ Visualización gráfica en ggplot2
+  + Intro a ggplot: Entendiendo la gramática
+  + Geometric objects: Tipos de gráficos
+  + Tipos de gráficos
+  + [Extendiendo ggplot2:](https://exts.ggplot2.tidyverse.org/gallery/) 
+      + ggthemes
+      + patchwork y cowplot
+  + Opciones para graficar rápidamente sin mucho código
+      + [esquisse](https://github.com/dreamRs/esquisse)
+         ]
+  
+  
+  
+
+   
